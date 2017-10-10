@@ -144,11 +144,15 @@ namespace TheFortBoyard
                                     case "d":
                                         int rndNr = randomNr(0, 4);
 
-                                        //System.Threading.Thread.Sleep(1000);
-                                        //Console.Beep();
+                                        System.Threading.Thread.Sleep(1000);
+                                        Console.Beep();
 
                                         if (rndNr == 0)
                                         {
+                                            for (int i = 0; i < 2; i++)
+                                            {
+                                                Console.Beep();
+                                            }
                                             message = "You found a Scorpion!";
                                             numberOfScorpions++;
                                             points = 0;
