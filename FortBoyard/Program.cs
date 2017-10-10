@@ -9,7 +9,7 @@ namespace TheFortBoyard
 {
     class Program
     {
-        // Method: Print out Welcome
+        // Method: Print Welcome
         static void Welcome()
         {
             Console.Clear();
@@ -17,7 +17,7 @@ namespace TheFortBoyard
             Console.WriteLine("Welcome to The FORT BOYARD GAME! \n---------------------- \n");
         }
 
-        // Method: Print out Welcome back
+        // Method: Print Welcome back
         static void Quit()
         {
             Console.Clear();
