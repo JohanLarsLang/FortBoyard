@@ -1,4 +1,8 @@
-﻿using System;
+﻿// Lab 1, Göteborg 171010
+
+// By Johan lång and Anders Eriksson
+
+using System;
 using System.IO;
 
 namespace TheFortBoyard
@@ -81,7 +85,7 @@ namespace TheFortBoyard
 
             // Game start
 
-           
+
             Welcome();
             string menyMainSelection = "";
 
@@ -104,7 +108,6 @@ namespace TheFortBoyard
                         string content = File.ReadAllText(@"C:\FortBoyard\Instruction.txt");
                         Console.WriteLine(content);
                         Console.WriteLine();
-                        Welcome();
                         break;
 
                     case "p":
