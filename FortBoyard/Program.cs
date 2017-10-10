@@ -105,8 +105,10 @@ namespace TheFortBoyard
                         Console.Clear();
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine("Game Instructions: \n ---------------------  \n");
-                        string content = File.ReadAllText(@"C:\FortBoyard\Instruction.txt");
-                        Console.WriteLine(content);
+                        Console.WriteLine("Instructions for Fort Boyard");
+                        Console.WriteLine("Your mission is to collect as many keys as possible \nto open the treasure! You will digg in pots and \nanswer riddles in the Watch tower and at least \ntry to figure out the password to open the treasure. \nEnjoy the game and Good Luck!"); 
+                        
+                        
                         Console.WriteLine();
                         break;
 
@@ -122,7 +124,7 @@ namespace TheFortBoyard
                                 Console.ForegroundColor = ConsoleColor.Green;
                                 Console.WriteLine($"You are now in the {Rooms.Pot} Room \n");
                                 Console.WriteLine($"Your mission is to digg in pots to find the key...");
-                                Console.WriteLine($"Thera are other things to find as weel but the pot can also be empty.");
+                                Console.WriteLine($"Thera are other things to find as well but the pot can also be empty.");
                                 Console.WriteLine($"Be aware... ...you will maybe find a scorpion!\n");
 
                                 Console.WriteLine("[D]igg in a pot");
@@ -207,7 +209,7 @@ namespace TheFortBoyard
                                                     string wholeNameRoom2 = room2.Insert(9, " ");
 
                                                     Console.WriteLine($"You are now in the {wholeNameRoom2} \n");
-                                                    Console.WriteLine($"Your mission is to answear 3 riddles and each correct answer will give you a key!\n");
+                                                    Console.WriteLine($"Your mission is to answer 3 riddles and each correct answer will give you a key!\n");
 
                                                     Console.WriteLine("[R]iddle");
                                                     Console.WriteLine("[C]lue");
@@ -342,7 +344,7 @@ namespace TheFortBoyard
                                                                         Console.WriteLine($"You are now in the {Rooms.Treasure} room! \n");
                                                                         Console.WriteLine($"Your mission is to figure out the password to open the treasure!");
                                                                         Console.WriteLine($"You got one clue for the password for each key.");
-                                                                        Console.WriteLine($"You has only one (1) chance to enter the correct password!\n");
+                                                                        Console.WriteLine($"You have only one (1) chance to enter the correct password!\n");
                                                                         Console.WriteLine("[O]pen treasure..");
                                                                         Console.WriteLine("[P]lay again..");
                                                                         Console.WriteLine("[Q]UIT \n");
@@ -401,7 +403,7 @@ namespace TheFortBoyard
                                                                                 }
 
                                                                                 else if (openTreasure == true && answearTreasure == false)
-                                                                                    message = "Enter password to open the tresure!";
+                                                                                    message = "Enter password to open the treasure!";
 
                                                                                 else
                                                                                     message = "Open the treasure by select command: O";
@@ -411,7 +413,7 @@ namespace TheFortBoyard
                                                                                 Quit();
                                                                                 Console.WriteLine();
                                                                                 Console.WriteLine("Are you sure you want to quit the game?");
-                                                                                Console.Write("Select Y or y for quit the game or any else for stay: ");
+                                                                                Console.Write("Select Y or y to quit the game or any key to continue: ");
                                                                                 string quitSelection3 = Console.ReadLine();
 
                                                                                 if (quitSelection3 == "Y" || quitSelection3 == "y")
@@ -430,7 +432,7 @@ namespace TheFortBoyard
                                                                                 }
 
                                                                                 else
-                                                                                    message = "Open the treasure by select command: O";
+                                                                                    message = "Open the treasure by selecting command: O";
                                                                                 answearTreasure = true;
                                                                                 break;
                                                                         }
@@ -446,7 +448,7 @@ namespace TheFortBoyard
                                                             Quit();
                                                             Console.WriteLine();
                                                             Console.WriteLine("Are you sure you want to quit the game?");
-                                                            Console.Write("Select Y or y for quit the game or any else for stay: ");
+                                                            Console.Write("Select Y or y to quit the game or any key to continue: ");
                                                             string quitSelection2 = Console.ReadLine();
 
                                                             if (quitSelection2 == "Y" || quitSelection2 == "y")
@@ -553,7 +555,7 @@ namespace TheFortBoyard
                                         Quit();
                                         Console.WriteLine();
                                         Console.WriteLine("Are you sure you want to quit the game?");
-                                        Console.Write("Select Y or y for quit the game or any else for stay: ");
+                                        Console.Write("Select Y or y to quit the game or any key to continue: ");
 
                                         string quitSelection1 = Console.ReadLine();
 
@@ -578,7 +580,7 @@ namespace TheFortBoyard
                         Quit();
                         Console.WriteLine();
                         Console.WriteLine("Are you sure you want to quit the game?");
-                        Console.Write("Select Y or y for quit the game or any else for stay: ");
+                        Console.Write("Select Y or y to quit the game or any key to continue: ");
 
                         string quitSelection = Console.ReadLine();
 
